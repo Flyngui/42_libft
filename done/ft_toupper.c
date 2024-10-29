@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 20:15:38 by guiferre          #+#    #+#             */
-/*   Updated: 2024/10/29 20:20:38 by guiferre         ###   ########.fr       */
+/*   Created: 2024/10/29 19:25:55 by guiferre          #+#    #+#             */
+/*   Updated: 2024/10/29 19:26:41 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+int	ft_toupper(int nb)
 {
-	unsigned	int	lenght;
-	unsigned	int	i;
-
-	lenght = 0;
-	while (src[lenght] != '\0')
-		lenght++;
-	i = 0;
-	while (src[i] != '\0' && i < size)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (lenght);
+	if (nb >= 97 && nb <= 122)
+		return (nb - 32);
+	else
+		return (nb);
 }
