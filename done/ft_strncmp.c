@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 20:15:38 by guiferre          #+#    #+#             */
-/*   Updated: 2024/10/30 16:05:29 by guiferre         ###   ########.fr       */
+/*   Created: 2024/10/30 15:51:39 by guiferre          #+#    #+#             */
+/*   Updated: 2024/10/30 15:59:46 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	lenght;
 	unsigned int	i;
 
-	lenght = 0;
-	while (src[lenght] != '\0')
-		lenght++;
 	i = 0;
-	while (src[i] != '\0' && i < size)
+	while (i <= n)
 	{
-		dest[i] = src[i];
+		if (s1[i] != s2[i] || s1[i] == '\0')
+			return (s1[i] - s2[i]);
 		i++;
 	}
-	dest[i] = '\0';
-	return (lenght);
+	return (0);
 }
