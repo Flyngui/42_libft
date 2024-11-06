@@ -6,19 +6,21 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:23:51 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/05 17:40:58 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:43:09 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-void	*ft_memset(void *s, int c, int n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	int	i;
+	char	*str;
 
-	i = 0;
-	while (i < n)
+	str = ((char *) s);
+	while (n > 0)
 	{
-		((char *) s)[i] = c;
-		i++;
+		*str = c;
+		str++;
+		n--;
 	}
 	return (0);
 }

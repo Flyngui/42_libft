@@ -1,25 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 18:54:39 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:37:26 by guiferre         ###   ########.fr       */
+/*   Created: 2024/11/06 13:11:48 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/06 16:07:04 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memmove(void *dest, void *src, size_t n)
 {
-	char	*str;
+	int		i;
 
-	str = s;
-	while (n > 0)
+	if (src < dest)
 	{
-		*str = '\0';
-		str++;
-		n--;
+		i = (int)n - 1;
+		while (i >= 0)
+		{
+			*((char *) dest + i) = *((char *) src + i);
+			i--;
+		}
 	}
+	else
+	{
+		i = 0;
+		while (i < (int)n)
+		{
+			*((char *) dest + i) = *((char *) src + i);
+			i++;
+		}
+	}
+	return (dest);
 }

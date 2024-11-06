@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 18:54:39 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:37:26 by guiferre         ###   ########.fr       */
+/*   Created: 2024/11/06 12:49:28 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/06 13:39:17 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*str;
+	char	*end;
+	char	*start;
 
-	str = s;
+	end = (char *)dest;
+	start = (char *)src;
 	while (n > 0)
 	{
-		*str = '\0';
-		str++;
+		*end = *start;
+		end++;
+		start++;
 		n--;
 	}
+	return ((void *)end);
 }
