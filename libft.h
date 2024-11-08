@@ -6,7 +6,7 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 20:07:14 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 03:22:35 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:27:29 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <limits.h>
 
 size_t		ft_strlcpy(char *dest, const char *src, size_t size);
 size_t		ft_strlcat(char *dest, const char *src, size_t size);

@@ -1,14 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 02:29:58 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 02:37:12 by guiferre         ###   ########.fr       */
+/*   Created: 2024/11/06 19:05:04 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/08 17:02:15 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include <stdlib.h>
 
-char **ft_split(char const *s, char c)
+void	*ft_memchr(const void *s, int c, size_t n)
+{
+	size_t		i;
+
+	i = 0;
+	while (i < n)
+	{
+		if (*(unsigned char *)(s + i) == (unsigned char)c)
+			return ((void *)(s + i));
+		i++;
+	}
+	return (NULL);
+}

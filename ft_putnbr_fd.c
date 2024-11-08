@@ -6,13 +6,13 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:44:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 21:44:01 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:48:43 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include "libft.h"
 
-void	ft_putnbr_doesit(int temp, int fd)
+static void	ft_putnbr_doesit(int temp, int fd)
 {
 	int	arr[10];
 	int	i;

@@ -1,14 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 02:27:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 02:37:26 by guiferre         ###   ########.fr       */
+/*   Created: 2024/10/30 15:51:39 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/08 16:09:57 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (i < n && *s1 && *s2)
+	{
+		if (*s1 != *s2)
+			return (*(unsigned char *)s1 - *(unsigned char *)s2);
+		s1++;
+		s2++;
+		i++;
+	}
+	if (i < n)
+	{
+		return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	}
+	return (0);
+}

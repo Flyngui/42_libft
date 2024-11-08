@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/06 19:05:04 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 19:51:52 by guiferre         ###   ########.fr       */
+/*   Created: 2024/11/07 15:51:28 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/08 16:26:47 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include <stddef.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strrchr(char *s, int c)
 {
-	int			i;
-	const char	*str;
+	int	i;
 
-	str = ((char *)s);
 	i = 0;
-	while (i < (int)n)
-	{
-		if (str[i] == c)
-			return ((void *)&str[i]);
+	while (s[i])
 		i++;
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return (&s[i]);
+		i--;
 	}
 	return (NULL);
 }

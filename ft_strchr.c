@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 00:54:56 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 01:42:38 by guiferre         ###   ########.fr       */
+/*   Created: 2024/11/07 15:43:24 by guiferre          #+#    #+#             */
+/*   Updated: 2024/11/08 16:24:00 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include <stddef.h>
 
-char	*ft_strnstr(char *str, char *find, size_t n)
+char	*ft_strchr(char *s, int c)
 {
-	int	i;
-	int	j;
-
-	if (find[0] == '\0')
-		return (str);
-	i = 0;
-	while (i <= (int) n)
+	while ((char)c != *s)
 	{
-		j = 0;
-		while (str[i + j] == find[j])
-		{
-			if (i + j >= (int) n)
-				return (NULL);
-			if (find[j + 1] == '\0')
-				return (&str[i]);
-			j++;
-		}
-		i++;
+		if (!*s)
+			return (0);
+		s++;
 	}
-	return (NULL);
+	return ((char *)s);
 }
