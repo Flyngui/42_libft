@@ -6,11 +6,12 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:42:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/10/29 18:44:34 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 03:21:47 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:23:51 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:43:09 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/07 22:27:54 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -22,5 +22,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		str++;
 		n--;
 	}
-	return (0);
+	return (s);
 }

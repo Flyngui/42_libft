@@ -6,17 +6,13 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:44:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 17:56:45 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/07 21:44:01 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+#include "libft.h"
 
-void	ft_putchar_fd(char c)
-{
-	write (fd, &c, 1);
-}
-
-void	ft_putnbr_doesit(int temp)
+void	ft_putnbr_doesit(int temp, int fd)
 {
 	int	arr[10];
 	int	i;
@@ -38,23 +34,23 @@ void	ft_putnbr_doesit(int temp)
 	k = i - 1;
 	while (k > -1)
 	{
-		ft_putchar_fd (arr[k] + '0');
+		ft_putchar_fd(arr[k] + '0', fd);
 		k--;
 	}
 }
 
-void	ft_putnbr_fd(int nb)
+void	ft_putnbr_fd(int nb, int fd)
 {
 	int	tempnb;
 
 	tempnb = nb;
 	if (tempnb == 0)
 	{
-		ft_putchar_fd ('0');
+		ft_putchar_fd('0', fd);
 	}
 	if (tempnb < 0)
 	{
-		write (fd, "-", 1);
+		ft_putchar_fd('-', fd);
 	}
-	ft_putnbr_doesit(tempnb);
+	ft_putnbr_doesit(tempnb, fd);
 }

@@ -6,24 +6,22 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:41:31 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:38:50 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 01:57:48 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_memcmp(const void *str1, const void *str2, int n)
 {
-	int			i;
-	const char	*s1;
-	const char	*s2;
+	int				i;
 
-	i = 0;
-	s1 = str1;
-	s2 = str2;
-	while (i < n)
+	i = n;
+	while (i > 0)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
+		if (*(unsigned char *)str1 != *(unsigned char *)str2)
+			return (*(unsigned char *)str1 - *(unsigned char *)str2);
+		str1++;
+		str2++;
+		i--;
 	}
 	return (0);
 }

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include <stddef.h>
 
-char	*ft_strchar(char *s, int c)
+char	*ft_strchr(char *s, int c)
 {
 	int	i;
 

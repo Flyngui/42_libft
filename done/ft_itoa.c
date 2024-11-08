@@ -6,7 +6,7 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 18:22:48 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 19:26:21 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 02:15:10 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -39,6 +39,8 @@ char	*ft_itoa(int n)
 
 	temp = n;
 	lenght = 0;
+	if (temp == 0)
+		lenght++;
 	while (temp != 0)
 	{
 		temp /= 10;

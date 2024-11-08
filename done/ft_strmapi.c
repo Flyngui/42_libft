@@ -6,7 +6,7 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 19:26:55 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 19:57:59 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/08 02:22:50 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -31,5 +31,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		str[i] = (*f)(i, s[i]);
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }

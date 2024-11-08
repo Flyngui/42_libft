@@ -6,24 +6,19 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:29:03 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:22:48 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/07 21:36:54 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+#include "libft.h"
 
-int	ft_calloc(int n, size_t size)
+void	*ft_calloc(size_t n, size_t size)
 {
-	int	*arr;
+	void	*arr;
 
-	if ((n * size) > 2147483647)
-		return (NULL);
 	arr = malloc(size * n);
-	if (arr == NULL)
+	if (!arr)
 		return (NULL);
-	while (size > 0)
-	{
-		*arr = 0;
-		size--;
-	}
+	ft_bzero(arr, size * n);
 	return (arr);
 }
