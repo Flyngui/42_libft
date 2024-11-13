@@ -37,7 +37,7 @@ static void	free_split(char **arr, size_t i)
 	free(arr);
 }
 
-char	**ft_split_logic(char const *s, char c, char **arr)
+static char	**ft_split_logic(char const *s, char c, char **arr)
 {
 	size_t	i;
 	size_t	lenght;
