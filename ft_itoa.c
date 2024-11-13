@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include <stdlib.h>
 
-char	*itoa_logic(int n, int lenght, char *arr)
+static char	*itoa_logic(int n, int lenght, char *arr)
 {
 	int		temp;
 	int		i;
