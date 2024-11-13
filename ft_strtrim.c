@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	isset(char c, const char *set)
+static int	setcheck(char c, const char *set)
 {
 	while (*set)
 	{
@@ -32,9 +32,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	start = (char *)s1;
 	end = start + ft_strlen(s1);
-	while (*start && isset(*start, set))
+	while (*start && setcheck(*start, set))
 		start++;
-	while (start < end && isset(*(end - 1), set))
+	while (start < end && setcheck(*(end - 1), set))
 		end--;
 	strim = ft_substr(start, 0, end - start);
 	return (strim);
