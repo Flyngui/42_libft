@@ -6,7 +6,7 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:29:03 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 21:36:54 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:23:21 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -14,8 +14,10 @@
 
 void	*ft_calloc(size_t n, size_t size)
 {
-	void	*arr;
+	void		*arr;
 
+	if (size != 0 && n > (size_t)-1 / size)
+		return (NULL);
 	arr = malloc(size * n);
 	if (!arr)
 		return (NULL);
