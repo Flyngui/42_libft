@@ -6,7 +6,7 @@
 #    By: guiferre <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 20:00:17 by guiferre          #+#    #+#              #
-#    Updated: 2024/11/07 21:26:08 by guiferre         ###   ########.fr        #
+#    Updated: 2024/11/14 21:49:32 by guiferre         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 CC = cc
@@ -50,6 +50,7 @@ SOURCES = ft_atoi.c \
           ft_toupper.c
 OBJS = $(SOURCES:.c=.o)
 
+
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
@@ -66,5 +67,6 @@ fclean: clean
 
 re: fclean
 	$(MAKE) all
+
 
 .PHONY: all clean fclean re
