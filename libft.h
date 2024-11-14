@@ -6,7 +6,7 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 20:07:14 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/14 19:34:48 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 20:10:45 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -48,8 +48,8 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strnstr(const char *str, const char *find, size_t n);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strtrim(char const *s1, char const *set);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int nb);
 int			ft_toupper(int nb);
-char		*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
