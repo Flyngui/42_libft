@@ -6,20 +6,20 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:11:48 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 22:37:02 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:49:06 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, void *src, size_t n)
 {
-	int		i;
+	size_t	i;
 
-	if (src == NULL && dest == NULL)
-		return (0);
+	if (!src && !dest)
+		return (NULL);
 	if (src < dest)
 	{
-		i = (int)n - 1;
+		i = n - 1;
 		while (i >= 0)
 		{
 			*((char *) dest + i) = *((char *) src + i);
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 	else
 	{
 		i = 0;
-		while (i < (int)n)
+		while (i < n)
 		{
 			*((char *) dest + i) = *((char *) src + i);
 			i++;

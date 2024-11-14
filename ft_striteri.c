@@ -6,13 +6,13 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 18:18:37 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/07 19:48:26 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 18:48:36 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i] != '\0')

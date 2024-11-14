@@ -6,20 +6,12 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:54:39 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/06 13:37:26 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:09:51 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
-
-	str = s;
-	while (n > 0)
-	{
-		*str = '\0';
-		str++;
-		n--;
-	}
+	ft_memset(s, 0, n);
 }

@@ -6,13 +6,14 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:41:31 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 01:57:48 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:40:29 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	ft_memcmp(const void *str1, const void *str2, int n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	int				i;
+	size_t	i;
 
 	i = n;
 	while (i > 0)

@@ -6,13 +6,13 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:44:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 14:48:43 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 18:10:30 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include "libft.h"
 
-static void	ft_putnbr_doesit(int temp, int fd)
+static void	putnbr_logic(int temp, int fd)
 {
 	int	arr[10];
 	int	i;
@@ -47,10 +47,11 @@ void	ft_putnbr_fd(int nb, int fd)
 	if (tempnb == 0)
 	{
 		ft_putchar_fd('0', fd);
+		return ;
 	}
 	if (tempnb < 0)
 	{
 		ft_putchar_fd('-', fd);
 	}
-	ft_putnbr_doesit(tempnb, fd);
+	putnbr_logic(tempnb, fd);
 }

@@ -6,14 +6,14 @@
 /*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:42:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 03:21:47 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:54:18 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')
