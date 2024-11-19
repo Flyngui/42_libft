@@ -6,7 +6,7 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:11:48 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/14 20:09:24 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:24:40 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*dstr;
 
 	if (!src && !dest)
-		return (dest);
+		return (NULL);
 	if (dest < src)
 		return (ft_memcpy(dest, src, n));
 	sstr = (const unsigned char *)src;
