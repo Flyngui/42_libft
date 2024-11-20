@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:11:48 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:24:40 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:08 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)

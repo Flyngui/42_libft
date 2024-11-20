@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 02:27:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:31:33 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:37 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:51:28 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:36:33 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:51:07 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stddef.h>
 
 char	*ft_strrchr(char *s, int c)

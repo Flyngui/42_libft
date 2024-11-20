@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 02:28:33 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:42:48 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:51:13 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	setcheck(char c, const char *set)

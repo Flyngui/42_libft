@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 18:22:48 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 02:15:10 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:48:54 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 static char	*itoa_logic(int n, int lenght, char *arr)

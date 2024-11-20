@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guiferre <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:44:41 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/14 18:10:30 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:22 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 #include "libft.h"
 

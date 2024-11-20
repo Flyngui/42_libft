@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:23:51 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:25:16 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:12 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)

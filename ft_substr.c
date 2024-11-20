@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 02:26:11 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/08 17:46:06 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:51:17 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

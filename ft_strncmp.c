@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:51:39 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:35:00 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:52 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

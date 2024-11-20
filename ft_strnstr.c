@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:54:56 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/19 18:36:15 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:56 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 char	*ft_strnstr(char *str, char *find, size_t n)

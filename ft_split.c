@@ -6,9 +6,10 @@
 /*   By: guiferre <guiferre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 02:29:58 by guiferre          #+#    #+#             */
-/*   Updated: 2024/11/13 18:05:01 by guiferre         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:49:27 by guiferre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	totallenght(const char *s, char c)
